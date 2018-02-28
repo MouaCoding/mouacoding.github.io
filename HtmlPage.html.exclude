@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Matthew Moua</title>
+    <script>
+    //Javascript code here
+        
+    </script>
+
+    <link href="main.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <h1 id="title">Matthew Moua's Website using HTML, CSS, and Javascript.</h1>
+    <p>
+        <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/24129627_1928288450532161_1949337501641127117_n.jpg?oh=341f6e739843d626d734ddcff3dca63a&oe=5AB7B396"
+             width="400" height="400" />
+    </p>
+
+    <input type="text" id="myTextBox" />
+    <input type="submit" value="Search" onclick="substitute()" />
+
+    <script>
+    //Call Javascript functions and stuff here.
+    </script>
+        
+    <p id="aboutme">
+        About Me: <br />
+        Hello, my name is Matthew Moua. I am a graduate Computer Science and Engineering Major at the University of California, Davis.
+    </p>
+    <p>
+        Skills:
+        <ul>
+            <li>Android Studio (Java, XML)</li>
+            <li>Javascript, CSS, HTML</li>
+            <li>Python</li>
+            <li>C, C++</li>
+            <li>Firebase</li>
+        </ul>
+    </p>
+    <p>
+        A list of my Projects:
+        <ul>
+            <li><a href="rhrn.html"> Right Here Right Now</a></li>
+            <li><a href="sustainable.html"> Sustainable Energy Conservation</a></li>
+        </ul>
+    </p>
+
+    <p>
+        Feel free to email me at mouacoding@gmail.com<br />
+        Here is my LinkedIn:
+        <a href="https://www.linkedin.com/in/matthew-moua-545090122/"> LinkedIn</a>
+    </p>
+</body>
+
+</html>

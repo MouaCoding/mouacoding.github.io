@@ -1,0 +1,52 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #fff;
+  margin: 30px;
+}
+
+h1 {
+  padding-bottom: 30px;
+}
+
+.container {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  border-radius: 10px;
+  background: green;
+}
+
+div#flashMessage {
+    background: lightgreen;
+    border-radius:10px;
+    text-align:center;
+    padding: 10px 0;
+}
+
+button#previewButton {
+    padding: 25px;
+    text-align: left;
+    background: blue;
+}
+
+p#contentParagraph {
+    padding: 50px;
+    text-align:center;
+    background: lightblue;
+}
+
+input#inputContent {
+    padding: 50px;
+    text-align:center;
+}
