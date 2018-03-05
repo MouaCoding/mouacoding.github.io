@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Matthew Moua</title>
+    
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="img/profile.jpg" />
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/hover.css" rel="stylesheet" type="text/css" />
+
+    <!--BOOTSTRAP Framework-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+</head>
+
+<body class="bg-dark">
+    <header>
+        <div id="head">           
+        <nav>
+            <ul class="top-bar" id="top-bar">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#skillGroup">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#codingTutorials">Coding Tutorials</a></li>
+                <li><a href="#miscellanous">Miscellanous</a></li>
+            </ul>
+        </nav>
+
+            <div id="overlay-video">
+                <video autoplay muted loop id="background-video">
+                    <source src="vid/Mt_Baker.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <h1 id="title">
+                Hello, I'm Matthew Moua.
+            </h1>
+
+            
+            <canvas id="background"> </canvas>
+        </div>
+
+    </header>
+    <div id="aboutme">
+        <h1 id="aboutMeHeader" class="h1Title">About Me</h1>
+        <div class="picture">
+            <img src="img/profile.jpg" alt="Profile Picture of Matthew Moua" class="profile-pic" />
+        </div>
+        <p>I am a graduate Computer Science and Engineering Major at the University of California, Davis.</p>
+        <div id="aboutmebuttons">
+            <div class="splitintwo">
+                <div class="aboutmecolumn">
+                    <img id="efficient" class="aboutMeHexagons" src="img/fast.ico">
+                    <p id="efficientContent" class="hvr-pulse">Fast<br />I am constantly improving load times with lag-free UI and more efficient databases and queries.</p>
+                </div>
+                <div class="aboutmecolumn">
+                    <img id="hardworker" class="aboutMeHexagons" src="img/hardworker.ico">
+                    <p id="hardContent" class="hvr-pulse">Hard Worker<br />I won't stop coding until I solve the problem.</p>
+                </div>
+            </div>
+
+            <div class="splitintwo">
+                <div class="aboutmecolumn">
+                    <img id="reliable" class="aboutMeHexagons" src="img/rely.ico">
+                    <p id="reliableContent" class="hvr-pulse">Reliable<br />I finish my work in a timely manner and will look for future improvements.</p>
+                </div>
+                <div class="aboutmecolumn">
+                    <img id="responsive" class="aboutMeHexagons" src="img/responsive.ico">
+                    <p id="responsiveContent" class="hvr-pulse">Responsive<br />My designs are responsive and dynamic and will expand to any size and per user interaction.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="skillGroup">
+        <h1 class="h1Title">Skills</h1>
+            <div class="container">
+                <div class="skills js animate-skills"><div style="float:left; display:inline;background:firebrick; padding:0 20px;">Javascript</div> 75%</div>
+            </div>
+            <div class="container">
+                <div class="skills css animate-skills" style="margin-left:0;">
+                    <div style="float:left; display:inline; background:#4149E1; padding:0 20px;">
+                        CSS
+                    </div>
+                    65%
+                </div>
+                </div>
+            <div class="container">
+                <div class="skills html animate-skills">
+                    <div style="float:left; display:inline; background:forestgreen; padding:0 20px;">
+                        HTML
+                    </div>
+                    80%
+                </div>
+                </div>
+            <div class="container">
+                <div class="skills jquery animate-skills">
+                    <div style="float:left; display:inline; background:#FF8000; padding:0 20px;">
+                        JQuery
+                    </div>
+                    75%
+                </div>
+                </div>
+            <div class="container">
+                <div class="skills android animate-skills">
+                    <div style="float:left; display:inline; background:blueviolet; padding:0 20px;">
+                        Java (Android)
+                    </div>
+                    90%
+                </div>
+                </div>                
+            <div class="container">
+                <div class="skills python animate-skills">
+                    <div style="float:left; display:inline; background:green; padding:0 20px;">
+                        Python
+                    </div>
+                    75%
+                </div>
+                </div>
+            <div class="container">
+                <div class="skills c animate-skills">
+                    <div style="float:left; display:inline; background:lightcoral; padding:0 20px;">
+                        C++
+                    </div>
+                    55%
+                </div>
+                </div>
+            <div class="container">
+                <div class="skills r animate-skills">
+                    <div style="float:left; display:inline; background: #7b98fe; padding:0 20px;">
+                        R Studio
+                    </div>
+                    70%
+                </div>
+                </div>
+            <div class="container">
+                <div class="skills firebase animate-skills">
+                    <div style="float:left; display:inline; background:purple; padding:0 20px;">
+                        Firebase
+                    </div>
+                    90%
+                </div>
+            </div>
+
+        <!----------------APIS----------------->
+        <div class="api">
+            <h1 id="api_title">API</h1>
+            <div class="container">
+                <div class="skills gma animate-skills">
+                    <div style="float:left; display:inline; background:#4149E1; padding:0 20px;">
+                        Google Maps API
+                    </div>
+                    90%
+                </div>
+            </div>
+            <div class="container">
+                <div class="skills gmga animate-skills">
+                    <div style="float:left; display:inline; background:forestgreen; padding:0 20px;">
+                        Google Maps Geocoding API
+                    </div>
+                    75%
+                </div>
+            </div>
+            <div class="container">
+                <div class="skills gmpa animate-skills">
+                    <div style="float:left; display:inline; background:salmon; padding:0 20px;">
+                        Google Maps Places API
+                    </div>
+                    75%
+                </div>
+            </div>
+            <div class="container">
+                <div class="skills dsa animate-skills">
+                    <div style="float:left; display:inline; background:#FF8000; padding:0 20px;">
+                        Dark Sky API
+                    </div>
+                    85%
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    
+    <div class="project-box group" id="projects">
+        <nav class="projects">
+            <h1 class="h1Title">Projects</h1>
+            <div style="text-align:center;">
+            <div id="project-title-list" class="project-title-hover">
+                <div id="all-projects">ALL</div>
+                <div id="web-projects">WEB</div>
+                <div id="android-projects">ANDROID</div>
+                <div id="other-projects">OTHER</div>
+                </div>
+            </div>
+            <ul id="project-inline">
+                <li id="rhrn"><a href="rhrn.html"> Right Here Right Now</a></li>
+                <li id="sustainable"><a href="sustainable.html"> Sustainable Energy Conservation</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-----------------------------------MapConnect------------------------------------------>
+    <div class="project-box group" id="map-connect">
+        <h1 class="projects-title">Map Connect</h1>
+
+
+
+        
+        <p id="mapconnect-description" style="opacity:1;">
+            Map Connect is a Realtime - Hyperlocal social media app on the Android Platform.  It features a radar-ping of a set distance
+            to calculate nearby events of the User's current location. <br /><br />Users can post their events
+            which is updated Real-Time on the Google Map, allowing other Users to see the NEARBY event and set if they want to go or not.
+            They can search for nearby Points of Interests, set a map marker, and calculate how long it will take to get to the event.
+            <br /><br />Map Connect is the improved version of Right Here Right Now, utilizing much more of the Google Maps API, Geocoding API
+            and Places API, as well as more efficient load times and better UI.
+            <br /><br />
+            Uses: Android Studio, Google Maps API, Places API, Geocoding API, Firebase Database
+            <br /><br />
+            Concepts: Firebase Management (Authentication, Database, Storage), Push Notifications and SMS texting,
+            JSON Parsing, API Usage, Threads, UI/UX, Custom Lists and Adapters, Scrolls (Infinite Scrolling), Firebase Queries
+        </p>
+    </div>
+
+        <!-----------------------------------Right Here Right Now------------------------------------------>
+    <div class="project-box group" id="righthererightnow">
+        <h1 class="projects-title">Right Here Right Now</h1>
+
+        <p id="rhrn-description" style="opacity:1;">
+            Right Here Right Now is a Realtime - Hyperlocal social media app on the Android Platform.  It has similar features as Map Connect, but less UI and UX, and 
+            less features.
+            <br /><br />
+            This app was designed in a group of four, for a client's request.  
+            <br /><br />
+            Uses: Android Studio, Google Maps API, Places API, Geocoding API, Firebase Database
+            <br /><br />
+            Concepts: Firebase Management (Authentication, Database, Storage), Push Notifications and SMS texting,
+            JSON Parsing, API Usage, Threads, UI/UX, Custom Lists and Adapters, Scrolls (Infinite Scrolling), Firebase Queries
+        </p>
+
+
+
+
+        <div class="container-rhrn-testimonials bubble">
+            <img src="img/rhrn/linkai.jpg" alt="Avatar" style="width:90px">
+            <p><span>Linkai Zhao.</span>Client: UC Davis Graduate</p>
+            <blockquote>"I am satisfied of the team's effort into creating the app! Matthew was always organized, does his assigned tasks and helped others with theirs, and was always taking notes of my requests.  It is my pleasure to recommend him in his future career!"</blockquote>
+        </div>
+        <div class="container-rhrn-testimonials bubble">
+            <img src="img/rhrn/arthur.jpg" alt="Avatar" style="width:90px">
+            <p><span>Arhur Shir</span>Advisor: UC Davis Graduate</p>
+            <blockquote>"It was a pleasure for me to work with you and your team these past two quarters. Great work on your team's app, I was very happy to see the improvement!! I wish you good fortune for your career!"</blockquote>
+        </div>
+
+    </div>
+
+        <!-----------------------------------Speak Easy------------------------------------------>
+    <div class="project-box group" id="speakeasy">
+        <h1 class="projects-title">Speak Easy</h1>
+
+
+        <p id="speakeasy-description" style="opacity:1;">
+            Speak Easy is a talking app for children and non-Native English speakers or even the average English Speaker to improve their English speaking skills.
+            <br /><br />
+            It features a difficulty level of Easy, Medium, and Hard so that even the proficient English Speaker can learn!
+            <br /><br />
+            Uses: Android Studio, Text To Speech Library, SQLite Database
+            <br /><br />
+            Concepts: Library Implementation, Threads, UI/UX, autotextcomplete, google search, Custom Lists and Adapters,
+
+        </p>
+
+    </div>
+
+        <!-----------------------------------STORMI------------------------------------------>
+        <div class="project-box group" id="stormi">
+            <h1 class="projects-title">Stormi</h1>
+
+            <div id="stormi-list">
+                <div class="animation-element a1">
+                    <div class="stormi-description hvr-bounce-in" id="stormi-image">
+                        <img id="phoneimage" src="img/stormi/phone1.png" />
+                    </div>
+                </div>
+
+                <div class="animation-element a2">
+                    <div class="stormi-description hvr-pulse" id="stormi-image2">
+                        <img id="phoneimage2" src="img/stormi/phone2.png" />
+                    </div>
+                </div>
+
+                <div class="animation-element a3">
+                    <div class="stormi-description hvr-pulse" id="stormi-image3">
+                        <img id="phoneimage3" src="img/stormi/phone3.png" />
+                    </div>
+                </div>
+
+                <div class="animation-element a4">
+                    <div class="stormi-description hvr-wobble-bottom" id="stormi-image4">
+                        <img id="phoneimage4" src="img/stormi/phone4.png" />
+                    </div>
+                </div>
+
+                <div class="animation-element a5">
+                    <div class="stormi-description hvr-wobble-top" id="stormi-image5">
+                        <img id="phoneimage5" src="img/stormi/phone5.png" />
+                    </div>
+                </div>
+
+                <div class="animation-element a6">
+                    <div class="stormi-description hvr-pulse" id="stormi-image6">
+                        <img id="phoneimage6" src="img/stormi/phone5.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <p id="stormi-description" style="opacity:0;">
+                Stormi is a Weather App for the Android platform.  It features a background assigned to the
+                weather conditions of the current User's location.  It also features a 48 hour Forecast, and a daily forecast.
+                The API used was Dark Sky Api, returning a JSON data file of a given latitude and longitude and Google Maps Geocoding 
+                to get the User's Current Location. <br /><br />
+                Uses: Android Studio, Google Maps Geocoding API, Dark Sky API, SQLite Database <br /><br />
+                Concepts: JSON Parsing, API usage, Threads, UI/UX, SQLite
+            </p>
+        </div>
+
+
+
+        <div class="project-box group" id="codingTutorials">
+            <h1 class="h1Title">Coding Tutorials</h1>
+        </div>
+
+        <div class="project-box group" id="miscellanous">
+            <h1 class="h1Title">Miscellanous</h1>
+        </div>
+
+        <p>
+            Feel free to email me at mouacoding@gmail.com<br />
+            Here is my LinkedIn:
+            <a href="https://www.linkedin.com/in/matthew-moua-545090122/"> LinkedIn</a>
+        </p>
+
+        <div id="links">
+            <div class="table">
+                <ul id="horizontalImages">
+                    <li id="linkedin" onclick="linkedinConfirm();"><img src="img/linkedin.png" width="50" height="50" /></li>
+                    <li id="github" onclick="githubConfirm();"><img src="img/github.png" width="50" height="50" /></li>
+                    <li id="mail"> <a href="mailto:mouacoding@gmail.com"><img src="img/gmail.png" width="50" height="50" /></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="js/OnClick.js"></script>
+        <script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/MattWebsite.js"> </script>
+        <footer>
+            &copy; Matthew Moua <a href="#top-bar">Back to Top</a>
+        </footer>
+
+</body>
+
+</html>

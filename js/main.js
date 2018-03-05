@@ -1,99 +1,26 @@
 ﻿
-console.log("HI");
 
-
-function add(x, y)
-{
-    return x + y;
-}
-
-function substitute() {
-    var myValue = document.getElementById('myTextBox').value; //Gets the value of the element by its id
-    //Get the id named myTextBox below
-    if (myValue.length == 0) //if the number of characters equal 0
-    {
-        alert('Please enter a real value in the text box.'); //Warn user if nothing is entered
-        return;
-    }
-    var myTitle = document.getElementById('title');
-    myTitle.innerHTML = myValue;
-}
-
-
-
-function linkedinConfirm() {
-    if (confirm('Do you want to go to Matthew\'s LinkedIn?')) {
-        window.location = 'https://www.linkedin.com/in/matthew-moua-545090122/';
-    } else {
-        return false;
-    }
-}
-function githubConfirm() {
-    if (confirm('Do you want to go to Matthew\'s Github?')) {
-        window.location = 'https://github.com/mouacoding';
-    } else {
-        return false;
-    }
-}
-
-function getYear(id) {
-    var year = new Date().getFullYear();
-    document.getElementById(id).innerHTML = Date();
-}
-
-
-
-
-
-//useful array methods: .indexOf - returns -1 if not in else returns index
-//.join .concat
-
-//for (var value in objectName){console.log(value, ": ", objectName[value]} Prints out the whole object and their values
-
-//$().eq(index). next or prev or chain it
-
-//$(:odd) select all odd numbers
-//$('a').attr("target", "_blank") set all links to open in a new tab
-const $pdfs = $('a[href$=".pdf"]'); //find all pdfs
-$pdfs.attr('download', true); //download ALL pdf links
-//$pdfs.on('click', function (e) {e.preventDefault();});
-//get paragraph index: $(p).each(function(index){ })
-
-
-
-//Jquery calls
-
-/*
-//Hide skills content until image is clicked
-$('#efficientContent').hide();
-$('#efficient').hover(function () {
-    $('#efficientContent').fadeIn(1000);
-});
-$('#hardContent').hide();
-$('#hardworker').hover(function () {
-    $('#hardContent').fadeIn(1000);
+$('.carousel').carousel({
+    interval: 5000
 });
 
-$('#reliableContent').hide();
-$('#reliable').hover(function () {
-    $('#reliableContent').fadeIn(1000);
-});
-
-$('#responsiveContent').hide();
-$('#responsive').hover(function () {
-    $('#responsiveContent').fadeIn(1000);
-});
-*/
 
 //Animate skills
 $(window).scroll(function () {
     var height = $(window).scrollTop();
-    if (height > 2600) {
-        $('#skillGroup').ready(function () {
+
+    if (height > 250) {
+        $('#back-to-top').css({ 'opacity': '1' });
+    }
+
+    if (height > 2300) {
+        $('#skill-group').ready(function () {
             $('.js').css('width', '75%');
-            $('.css').css('width', '65%');
+            $('.css').css('width', '80%');
             $('.html').css('width', '80%');
             $('.jquery').css('width', '75%');
+            $('.bootstrap').css('width', '75%');
+            $('.ajax').css('width', '70%');
             $('.android').css('width', '90%');
             $('.python').css('width', '75%');
             $('.c').css('width', '55%');
@@ -107,29 +34,39 @@ $(window).scroll(function () {
     }
 });
 
+/*
+console.log("HI");
+$(window).scroll(function () {
+    var height = $(window).scrollTop();
+    console.log(height);
+    $('#back-to-top').ready(function () {
 
-$('#project-title-list').hover(function (e) {
-    var offset = $(this).offset();
-    var x = (e.pageX - offset.left);
-    $('#project-title-list div').css('background-position',x+'px');
-    $('#project-title-list').css('background-color','blue');
+    });
+    if (height > 250) {
+
+        $('#back-to-top').css({'opacity':'1'});
+    }
 });
+*/
+
+
 
 $(window).scroll(function () {
     var height = $(window).scrollTop();
-    if (height > 6850) {
-        $('.animation-element').ready(function () {
-            $('.animation-element.a1')
-                .css({'transition': 'all .5s linear',
-                'transform': 'translateY(5%)',
-                'margin-right': '20px',
-                'opacity': '1'
+    if (height > 250) {
+        $('#stormi-image1').ready(function () {
+            $('#stormi-image1')
+                .css({
+                    'transition': 'all .5s linear',
+                    'transform': 'translateY(5%)',
+                    'margin-right': '20px',
+                    'opacity': '1'
                 });
             $('.animation-element')
                 .css({
                     'margin-top': '20px'
                 });
-                
+
         });
     } else {
         $('.animation-element')
@@ -196,15 +133,13 @@ $(window).scroll(function () {
 });
 
 
-$('.quotes').slick({
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    speed: 800,
-    slidesToShow: 1,
-    adaptiveHeight: true
+$('#button-draw').click(function () {
+    //get animation frame
+
 });
+
+
+
 
 
 $(document).ready(function ($) {
@@ -214,43 +149,55 @@ $(document).ready(function ($) {
     var mouseX = 0, mouseY = 0;
     var xp = 0, yp = 0;
     var circle = $("#circle");
+    circle.css({ "background-color": "red"});
+
+    var circle2 = $("#circle2");
+    circle2.css({ "background-color": "green" });
+
+    var circle3 = $("#circle3");
+    circle3.css({ "background-color": "blue" });
+
+    var circle4 = $("#circle4");
+    circle4.css({ "background-color": "cyan" });
+    
     function mouseStopped() {
         // if mouse stop moving remove class moving 
         // it will hide the circle with opacity transition                           
         circle.removeClass('moving');
+        circle2.removeClass('moving');
+        circle3.removeClass('moving');
+        circle4.removeClass('moving');
     }
 
     $(document).mousemove(function (e) {
         // if mouse start moving add class moving
         // it will show the circle with opacity transition 
         circle.addClass('moving');
+        circle2.addClass('moving');
+        circle3.addClass('moving');
+        circle4.addClass('moving');
         // get the mouse position minus 160px to center the circle
-        mouseX = e.pageX - 160;
-        mouseY = e.pageY - 160;
+        mouseX = e.pageX  ;
+        mouseY = e.pageY  ;
         // if mouse stop moving clear timer and call mouseStopped function
-        clearTimeout(timer);
-        timer = setTimeout(mouseStopped, 3000);
-        
+        //clearTimeout(timer);
+        //timer = setTimeout(mouseStopped, 3000);
+
     });
 
     // set the momentum with setInterval function
     var loop = setInterval(function () {
         // change 12 to alter damping higher is slower
-        xp += ((mouseX - xp) / 6);
-        yp += ((mouseY - yp) / 6);
+        xp += ((mouseX - xp) / 1);
+        yp += ((mouseY - yp) / 1);
         circle.css({ left: xp + 'px', top: yp + 'px' });  // 
-    }, 30);
+        circle2.css({ left: xp + 'px', top: yp + 'px', "animation": "orbit 1.5s linear infinite" });
+        circle3.css({ left: xp + 'px', top: yp + 'px', "animation": "orbit 1.4s linear infinite" });
+        circle4.css({ left: xp + 'px', top: yp + 'px', "animation": "orbit 1.6s linear infinite" });
+    }, 10);
+
+
 
 });
-
-
-
-
-
-
-
-
-
-
 
 
