@@ -41,6 +41,11 @@ div#head:hover {
     /*4494 6549 8292 1156 12/20 150*/
 }
 
+.fake-link {
+    cursor:pointer;
+}
+
+
 
 nav ul.top-bar {
     background: linear-gradient(270deg, white 0%, black 40%);
@@ -471,20 +476,9 @@ ul li#sustainable {
     border-radius:20px;
 }
 
-#stormi-image2{
-    transform: translateX(5%);
-}
-#stormi-image3{
-    transform: translateX(10%);
-}
-#stormi-image4{
-    transform: translateX(15%);
-}
-#stormi-image5{
-    transform: translateX(20%);
-}
-#stormi-image6{
-    transform: translateX(25%);
+#stormi-image1{
+    transform: translateY(-500px);
+    opacity:0;
 }
 
 
@@ -728,22 +722,22 @@ ul li#sustainable {
     /*transform: skew(0deg, 10deg);*/
     text-align: center;
     /*    background: radial-gradient(lightblue 49%, cyan 50%, #00d0f4 51%);*/
-        animation: rhrn-pulse 5.5s ease-out infinite;
+    animation: rhrn-pulse 5.5s ease-out infinite;
 
 }
 
 @keyframes rhrn-pulse {
-    0%{background: radial-gradient(lightblue 19%, cyan 20%, #00d0f4 21%);}
-    10%{background: radial-gradient(lightblue 22%, cyan 23%, #00d0f4 24%);}
-    20%{background: radial-gradient(lightblue 25%, cyan 26%, #00d0f4 27%);}
-    30%{background: radial-gradient(lightblue 28%, cyan 29%, #00d0f4 30%);}
-    40%{background: radial-gradient(lightblue 31%, cyan 32%, #00d0f4 33%);}
-    50%{background: radial-gradient(lightblue 33%, cyan 34%, #00d0f4 35%);}
-    60%{background: url("../img/rhrn/exclamation_point.png") no-repeat center, radial-gradient(lightblue 36%, cyan 37%, #00d0f4 38%);}
-    70%{background: url("../img/rhrn/exclamation_point.png") no-repeat center, radial-gradient(lightblue 39%, cyan 40%, #00d0f4 41%);}
-    80%{background: url("../img/rhrn/exclamation_point.png") no-repeat center, radial-gradient(lightblue 42%, cyan 43%, #00d0f4 44%);}
-    90%{background: url("../img/rhrn/exclamation_point.png") no-repeat center, radial-gradient(lightblue 45%, cyan 46%, #00d0f4 47%);}
-    100%{background: url("../img/rhrn/exclamation_point.png") no-repeat center, radial-gradient(lightblue 48%, cyan 49%, #00d0f4 50%);}
+    0%{background: url("../img/rhrn/school.png") no-repeat center, radial-gradient(lightblue 19%, cyan 20%, #00d0f4 21%);}
+    10%{background: url("../img/rhrn/school.png") no-repeat center,  radial-gradient(lightblue 22%, cyan 23%, #00d0f4 24%);}
+    20%{background: url("../img/rhrn/school.png") no-repeat center, radial-gradient(lightblue 25%, cyan 26%, #00d0f4 27%);}
+    30%{background: url("../img/rhrn/school.png") no-repeat center,  url("../img/rhrn/restaurant.png") no-repeat 30% center,   url("../img/rhrn/exclamation_point.png") no-repeat 70% center,  radial-gradient(lightblue 28%, cyan 29%, #00d0f4 30%);}
+    40%{background: url("../img/rhrn/school.png") no-repeat center,  url("../img/rhrn/restaurant.png") no-repeat 30% center,   url("../img/rhrn/exclamation_point.png") no-repeat 70% center,  radial-gradient(lightblue 31%, cyan 32%, #00d0f4 33%);}
+    50%{background: url("../img/rhrn/school.png") no-repeat center,  url("../img/rhrn/restaurant.png") no-repeat 30% center,   url("../img/rhrn/exclamation_point.png") no-repeat 70% center,  radial-gradient(lightblue 33%, cyan 34%, #00d0f4 35%);}
+    60%{background: url("../img/rhrn/school.png") no-repeat center, url("../img/rhrn/restaurant.png") no-repeat 30% center,   url("../img/rhrn/exclamation_point.png") no-repeat 25% center,  url("../img/rhrn/exclamation_point.png") no-repeat 70% center,  radial-gradient(lightblue 36%, cyan 37%, #00d0f4 38%);}
+    70%{background: url("../img/rhrn/school.png") no-repeat center, url("../img/rhrn/restaurant.png") no-repeat 30% center,   url("../img/rhrn/exclamation_point.png") no-repeat 25% center,  url("../img/rhrn/exclamation_point.png") no-repeat 70% center,  radial-gradient(lightblue 39%, cyan 40%, #00d0f4 41%);}
+    80%{background: url("../img/rhrn/school.png") no-repeat center, url("../img/rhrn/restaurant.png") no-repeat 30% center,   url("../img/rhrn/exclamation_point.png") no-repeat 25% center,   url("../img/rhrn/exclamation_point.png") no-repeat 70% center,  radial-gradient(lightblue 42%, cyan 43%, #00d0f4 44%);}
+    90%{background: url("../img/rhrn/school.png") no-repeat center, url("../img/rhrn/restaurant.png") no-repeat 30% center,   url("../img/rhrn/exclamation_point.png") no-repeat 25% center,  url("../img/rhrn/exclamation_point.png") no-repeat 70% center,  radial-gradient(lightblue 45%, cyan 46%, #00d0f4 47%);}
+    100%{background: url("../img/rhrn/school.png") no-repeat center, url("../img/rhrn/restaurant.png") no-repeat 30% center,  url("../img/rhrn/exclamation_point.png") no-repeat 25% center,   url("../img/rhrn/exclamation_point.png") no-repeat 70% center, radial-gradient(lightblue 48%, cyan 49%, #00d0f4 50%);}
 }
 
 
@@ -756,8 +750,6 @@ ul li#sustainable {
 #vision-col {
     border:2px solid black; border-radius:20px; height:300px; width:400px
 }
-
-
 
 
 
@@ -796,7 +788,7 @@ ul li#sustainable {
     /*box-shadow: 60px -60px 0 2px white, -60px -60px 0 2px white, -60px 60px 0 2px white, 60px 60px 0 2px white, 0 0 0 2px white;
     */
         /*animation: border 3.4s ease 1 forwards;*/
-    animation: scale-pulse 2s linear infinite;
+    animation: scale-pulse 1s linear infinite;
 
 }
 

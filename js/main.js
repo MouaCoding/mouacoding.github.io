@@ -1,11 +1,11 @@
 ﻿
 
-$(document).ready(function () {
+/*$(document).ready(function () {
 
     var modal = $('#draw').modal('show');
     setTimeout(function () { modal.modal('hide'); }, 2000);
 });
-
+*/
 $('.carousel').carousel({
     interval: 5000
 });
@@ -23,6 +23,11 @@ $('#toggle-animation').on('click', function () {
         $('#circle4').css('opacity', '1');
     }
 });
+
+$('#back-to-top').on('click', function () {
+    window.location.href = '#home';
+});
+
 
     //Animate skills
     $(window).scroll(function () {
@@ -82,8 +87,8 @@ $('#toggle-animation').on('click', function () {
             $('#stormi-image1').ready(function () {
                 $('#stormi-image1')
                     .css({
-                        'transition': 'all .5s linear',
-                        'transform': 'translateY(5%)',
+                        'transition': 'all 3.5s linear',
+                        'transform': 'translateY(500px)',
                         'margin-right': '20px',
                         'opacity': '1'
                     });
