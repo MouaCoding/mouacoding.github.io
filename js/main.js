@@ -37,10 +37,11 @@ $('#back-to-top').on('click', function () {
             $('#back-to-top').css({ 'opacity': '1' });
         }
 
-        if (height > 2500) {
-            $('.projects-animation').css(
-                "animation", "project-title-anim 5s linear forwards"
-           );
+        if (height > 4200) {
+            $('.projects-animation').css({
+                "opacity": "1",
+                "animation": "project-title-anim 5s linear forwards"
+            });
         }
 
         if (height > 2300) {
@@ -208,7 +209,8 @@ $('#back-to-top').on('click', function () {
             circle4.addClass('moving');
             // get the mouse position minus 160px to center the circle
             mouseX = e.pageX  ;
-            mouseY = e.pageY  ;
+            mouseY = e.pageY;
+            console.log(mouseY);
             // if mouse stop moving clear timer and call mouseStopped function
             //clearTimeout(timer);
             //timer = setTimeout(mouseStopped, 3000);
@@ -218,8 +220,8 @@ $('#back-to-top').on('click', function () {
         // set the momentum with setInterval function
         var loop = setInterval(function () {
             // change 12 to alter damping higher is slower
-            xp += ((mouseX - xp) / 1);
-            yp += ((mouseY - yp) / 1);
+            xp += ((mouseX - xp) / 100);
+            yp += ((mouseY - yp) / 100);
             circle.css({ left: xp + 'px', top: yp + 'px' });  // 
             circle2.css({ left: xp + 'px', top: yp + 'px', "animation": "orbit 2.52s linear infinite" });
             circle3.css({ left: xp + 'px', top: yp + 'px', "animation": "orbit 2.53s linear infinite" });
