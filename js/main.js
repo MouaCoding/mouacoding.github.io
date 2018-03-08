@@ -1,11 +1,11 @@
 ﻿
 
-/*$(document).ready(function () {
+$(document).ready(function () {
 
     var modal = $('#draw').modal('show');
     setTimeout(function () { modal.modal('hide'); }, 2000);
 });
-*/
+
 $('.carousel').carousel({
     interval: 5000
 });
