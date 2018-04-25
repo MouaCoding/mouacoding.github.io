@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Map Connect</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="img/profile.jpg" />
+
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/hover.css" rel="stylesheet" type="text/css" />
+
+    <!--BOOTSTRAP Framework-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<div class="container-fluid text-center" id="mapconnect" style="padding:0; margin: 0; background: aquamarine;">
+    <h1 class="display-4 text-center text-muted">Map Connect</h1>
+    <img src="img/mapconnect/mapconnect_logo.png" style="max-height:100px; max-width:100px;" class="mb-5" />
+    <p class="mx-5" id="mapconnect-description" style="opacity:1;">
+        Map Connect is a Realtime - Hyperlocal social media app on the Android Platform.  It features a radar-ping of a set distance
+        to calculate nearby events of the User's current location. <br /><br />Users can post their events
+        which is updated Real-Time on the Google Map, allowing other Users to see the NEARBY event and set if they want to go or not.
+        They can search for nearby Points of Interests, set a map marker, and calculate how long it will take to get to the event.
+        <br /><br />Map Connect is the improved version of Right Here Right Now, utilizing much more of the Google Maps API, Geocoding API
+        and Places API, as well as more efficient load times and better UI.
+        <br /><br />
+        Uses: Android Studio, Google Maps API, Places API, Geocoding API, Firebase Database
+        <br /><br />
+        Concepts: Firebase Management (Authentication, Database, Storage), Push Notifications and SMS texting,
+        JSON Parsing, API Usage, Threads, UI/UX, Custom Lists and Adapters, Scrolls (Infinite Scrolling), Firebase Queries
+    </p>
+
+    <div class="container-fluid text-center my-5">
+        <img class="card-img-top" src="img/mapconnect/mapconnect.PNG" alt="Map Connect Description" style="border-radius:20px; max-height:1000px; max-width:1000px;">
+    </div>
+    <div class="card-columns bg-dark round-all">
+        <div class="card bg-info mx-3 my-3" style="border-radius:20px;">
+            <img class="card-img-top" src="img/mapconnect/two.PNG" alt="Card image cap" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title">Change Map View!</h5>
+                <p class="card-text">Change map view between normal, satellite view, and Ranged view (See elevations)</p>
+            </div>
+        </div>
+        <div class="card p-3 bg-info mx-3 my-3" style="border-radius:20px;">
+            <blockquote class="blockquote mb-0 card-body">
+                <img class="card-img-top" src="img/mapconnect/four.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p>See trending events, filtered and ordered by number of likes! Can also change to the most trending events PER city!</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card  bg-success mx-3 my-3" style="border-radius:20px;">
+            <img class="card-img-top" src="img/mapconnect/three.PNG" alt="Card image cap" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title">Directions to Event</h5>
+                <p class="card-text">Clicking on an event will draw a route to the desired event! We can also tell you how to get there (:</p>
+            </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3 mx-3 my-3" style="border-radius:20px;">
+            <blockquote class="blockquote mb-0">
+                <img class="card-img-top" src="img/mapconnect/five.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p>Filter Trending Events by City!</p>
+                <footer class="blockquote-footer">
+
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card text-center bg-warning mx-3 my-3" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title">Profile Page</h5>
+                <img class="card-img-top" src="img/mapconnect/six.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p class="card-text">View Profile page, and check other User's page</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card  bg-info mx-3 my-3" style="border-radius:20px;">
+            <img class="card-img" src="img/mapconnect/four.PNG" alt="Card image" style="border-radius:20px;">
+        </div>
+        <div class="card p-3 text-right  bg-danger mx-3 my-3" style="border-radius:20px;">
+            <blockquote class="blockquote mb-0">
+                <img class="card-img-top" src="img/mapconnect/seven.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p>See your posts and events if you scroll down profile page</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card  bg-success mx-3 my-3" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title">UPDATED Messaging!!</h5>
+                <img class="card-img-top" src="img/mapconnect/eight.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p class="card-text">Messaging now is filtered by most current messages and also displays a PREVIEW text, as well as the date!</p>
+            </div>
+        </div>
+        <div class="card  bg-info mx-3 my-3" style="border-radius:20px;">
+            <img class="card-img-top" src="img/mapconnect/nine.PNG" alt="Card image cap" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title">Chat with Friends!</h5>
+                <p class="card-text">Chat with friends and let them know about events!</p>
+            </div>
+        </div>
+        <div class="card p-3  bg-light mx-3 my-3" style="border-radius:20px;">
+            <blockquote class="blockquote mb-0 card-body">
+                <img class="card-img-top" src="img/mapconnect/ten.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card  bg-success mx-3 my-3" style="border-radius:20px;">
+            <img class="card-img-top" src="img/mapconnect/one.PNG" alt="Card image cap" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title">Main Page!</h5>
+                <p class="card-text">See events near you, change views and play with the app!</p>
+            </div>
+        </div>
+        <div class="card  bg-warning mx-3 my-3" style="border-radius:20px;">
+            <img class="card-img-top" src="img/mapconnect/eleven.PNG" alt="Card image cap" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title">Following List!</h5>
+                <p class="card-text">See who is following you! filter by name!</p>
+            </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3 mr-3 my-3" style="border-radius:20px;">
+            <blockquote class="blockquote mb-0">
+                <img class="card-img-top" src="img/mapconnect/twelve.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p>See nearby events! and also place a pin anywhere you want - we will route it for you!</p>
+                <footer class="blockquote-footer">
+                    <small>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card text-center  bg-success mr-3 my-3" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title">Infinite Scrolling Posts</h5>
+                <img class="card-img-top" src="img/mapconnect/thirteen.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p class="card-text">Post what's on your mind and share with your followers!</p>
+            </div>
+        </div>
+        <div class="card  bg-danger mr-3 my-3" style="border-radius:20px;">
+            <img class="card-img" src="img/mapconnect/sixteen.PNG" alt="Card image" style="border-radius:20px;">
+        </div>
+        <div class="card p-3 text-right  bg-warning mr-3 my-3" style="border-radius:20px;">
+            <blockquote class="blockquote mb-0">
+                <img class="card-img-top" src="img/mapconnect/fourteen.PNG" alt="Card image cap" style="border-radius:20px;">
+                <p>Login and Sign up for the app now!</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card  bg-info mr-3 my-3" style="border-radius:20px;">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <img class="card-img-top" src="img/mapconnect/fifteen.PNG" alt="Card image cap" style="border-radius:20px;">
+            </div>
+        </div>
+        <div class="card  bg-success mr-3 my-3" style="border-radius:20px;">
+            <div class="card-body">
+                <img class="card-img-top" src="img/mapconnect/seventeen.PNG" alt="Card image cap" style="border-radius:20px;">
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -220,8 +220,8 @@ $('#back-to-top').on('click', function () {
         // set the momentum with setInterval function
         var loop = setInterval(function () {
             // change 12 to alter damping higher is slower
-            xp += ((mouseX - xp) / 100);
-            yp += ((mouseY - yp) / 100);
+            xp += ((mouseX - xp) / 12);
+            yp += ((mouseY - yp) / 12);
             circle.css({ left: xp + 'px', top: yp + 'px' });  // 
             circle2.css({ left: xp + 'px', top: yp + 'px', "animation": "orbit 2.52s linear infinite" });
             circle3.css({ left: xp + 'px', top: yp + 'px', "animation": "orbit 2.53s linear infinite" });

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Stormi</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="img/profile.jpg" />
+
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/hover.css" rel="stylesheet" type="text/css" />
+
+    <!--BOOTSTRAP Framework-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<div class="container-fluid" id="stormi" style="border-radius:5%; background:linear-gradient(to bottom, grey, black, gold); padding-top:0;padding-right:0;padding-bottom:0;">
+    <img src="img/stormi/stormi_logo.png" style="opacity:0.6; position:absolute; width: 15%; height: 15%; transform: translateY(100%);" />
+    <div class="stormi-background">
+        <h1 class="display-4 text-center text-white">Stormi</h1>
+        <p id="stormi-description" style="opacity:1; color:white;">
+            Stormi is a Weather App for the Android platform.  It features a background assigned to the
+            weather conditions of the current User's location.  It also features a 48 hour Forecast, and a daily forecast.
+            The API used was Dark Sky Api, returning a JSON data file of a given latitude and longitude and Google Maps Geocoding
+            to get the User's Current Location. <br /><br />
+            Uses: Android Studio, Google Maps Geocoding API, Dark Sky API, SQLite Database <br /><br />
+            Concepts: JSON Parsing, API usage, Threads, UI/UX, SQLite
+        </p>
+
+        <div class="row my-5">
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center my-5">
+                <img style="border-radius:20px;" class="hvr-pulse" src="img/stormi/phone1.PNG" />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center my-5">
+                <img style="border-radius:20px;" class="hvr-pulse" src="img/stormi/phone2.PNG">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center my-5">
+                <img style="border-radius:20px;" class="hvr-pulse" src="img/stormi/phone3.PNG">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center my-5">
+                <img style="border-radius:20px;" class="hvr-pulse" src="img/stormi/phone4.PNG" />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center my-5">
+                <img style="border-radius:20px;" class="hvr-pulse" src="img/stormi/phone5.PNG">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center my-5">
+                <img style="border-radius:20px;" class="hvr-pulse w-100" src="img/stormi/phone5.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
